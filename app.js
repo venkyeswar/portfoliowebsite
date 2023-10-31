@@ -11,4 +11,10 @@ app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 
 app.use(userRoutes);
-app.listen(3001);
+
+let port=3001;
+
+if(process.env.PORT){
+    port=process.env.PORT;
+}
+app.listen(port);

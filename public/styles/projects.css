@@ -129,13 +129,13 @@ ol li div:hover .visit{
     }
 
     .projects {
-        margin:3rem 17rem;
+        margin:3rem 8.6rem;
         
        
     }
 
     .projects ol {
-        width: 25rem;
+        width: 20rem;
         display: flex;
         flex-direction: column;
     }
