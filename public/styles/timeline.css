@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* body{
+	font-family: 'Poppins', sans-serif;
+} */
+.timeline-section{
+	 
+	margin-top:13rem;
+	margin-left:-2rem;
+	padding: 100px 15px;
+    max-height:500rem;
+	z-index:-1;
+}
+.timeline-items{
+	max-width:50rem;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+    
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 5px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+    height:4rem;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #eaa023;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: #eaa023;
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #2f363e;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+/* responsive
+@media(max-width: 767px){
+
+} */
+
+
+
+/* Media Query for Tab View */
+@media (max-width:1024px){
+	.timeline-section{
+		margin-top:-4rem;
+		margin:0 auto;
+	}
+}
+
+@media (max-width:480px){
+	.timeline-section{
+		margin-left:1rem;
+		max-width:20rem;
+	
+	}
+	.timeline-item{
+		height:6rem;
+	}
+	.timeline-content{
+		background-color:transparent;
+		max-width:20rem;
+		height:5rem;
+		margin-top:-1rem;
+	}
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}

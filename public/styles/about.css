@@ -1,0 +1,381 @@
+
+html{
+    --color-inner-bar:rgb(177, 10, 233);
+    --color-main-bar:rgb(110, 1, 161);
+}
+
+ h1{
+    margin-top:8rem;
+    margin-left:7rem;
+    font-size:3.5rem;
+    color:rgb(192, 3, 230);
+    font-family: 'Cantarell', sans-serif;
+ }
+ main{
+    margin-top:-3rem;
+    width:100rem;
+ }
+
+ .intro p{
+    font-size:1.4rem;
+    color:rgb(215, 222, 225);
+
+ }
+/* About Section */
+  
+
+#skills-heading{
+    font-size:3rem;
+    font-family: 'Cantarell', sans-serif;
+ 
+}
+ 
+
+
+.spec{
+    font-size:1.5rem;
+    text-align:center;
+    
+}
+
+/* Timeline Heading Styling */
+
+.timeline-heading h1{
+    font-size:3rem;
+    color:rgb(192, 3, 230);
+    margin-top:15rem;
+    margin-left:6rem;
+    margin-bottom:3rem;
+    font-family: 'Cantarell', sans-serif;
+}
+ /* Skills percentage bars */
+ 
+ .skills-section{
+     width:28rem;
+     margin:5rem auto;
+     margin-left:8rem;
+     color:rgb(240, 9, 252);
+ }
+ .about-skills{
+    font-size:1.5rem;
+    text-align:center;
+    color:rgb(215, 222, 225);
+
+ }
+ ol{
+    margin-top:4rem;
+ }
+#skill{
+    color:rgb(158, 0, 250);
+    font-size:1.3rem;
+    padding-left:10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ ol li{
+    list-style-type: none;
+}
+ .bar-rap{
+    display:flex;
+    margin-top:1rem;
+ }
+ .main-bar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:30rem;
+    height:1rem;
+    background-color:var(--color-main-bar);
+    color:white;
+    border-radius:50px;
+    overflow:hidden;
+    
+ }
+ .main-bar div{
+    border-radius:50px;
+ }
+ .bar-rap span{
+    font-size:1.2rem;
+    margin-top:-1rem;
+    margin-left:.78rem;
+    padding-top:0.5rem;
+    width:2.5rem;
+    height:2.5rem;
+    background-color:rgb(138, 13, 247);
+    border-radius:50%;
+    margin-bottom:-0.4rem;
+    text-align:center;
+    color:black;
+    font-weight:bold;
+ }
+
+ 
+.html-bar{
+    width:85%;
+    height:1rem;
+    background-color:var(--color-inner-bar);
+
+}
+
+.css-bar{
+    width:80%;
+    height:1rem;
+    background-color:var(--color-inner-bar);
+
+}
+.javascript-bar{
+    width:75%;
+    height:1rem;
+    background-color:var(--color-inner-bar);
+
+}
+.nodejs-bar{
+    width:70%;
+    height:1rem;
+    background-color:var(--color-inner-bar);
+
+}
+.expressjs-bar{
+    width:80%;
+    height:1rem;
+    background-color:var(--color-inner-bar);
+
+}
+.mongo-bar{
+    width:85%;
+    height:1rem;
+    background-color:var(--color-inner-bar);
+
+}
+
+.sql-bar{
+    width:80%;
+    height:1rem;
+    background-color: var(--color-inner-bar);
+}
+.technology{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+
+}
+.icons{
+   width:2rem;
+   height:2rem;
+}
+.technology .skill{
+    padding-left:1.5rem;
+    color:var(--color-primary-700);
+    font-weight:bold;
+}
+ 
+
+ /* main Section */
+.main-section{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-bottom:12rem;
+
+}
+ .timeline-section{
+    width:40rem;
+    height:60rem;
+ }
+
+
+ /* Media Query for Laptop View */
+
+ @media (min-width:1024px){
+    main{
+        margin-left:2px;
+        width:90rem;
+        margin-top:-7rem;
+    }
+    #profile_bg{
+        
+        margin-top:4rem;
+        margin-left:7rem;
+width:25rem;
+    }
+    .profile img{
+        width:20rem;
+    }
+    .profile{
+        margin-top:5rem;
+        margin-right:6rem;
+        
+    }
+    .introduction{
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+
+    h1,#skills-heading,.timeline-heading h1{
+        font-size:2rem;
+    }
+    .main-section{
+        width:90%;
+    }
+ }
+
+ /* Media Query for Tab View */
+
+ @media (max-width:1024px){
+    main{
+        flex-direction: column;
+        width:40rem;
+        margin:0 auto;
+        margin-top:-2rem;
+        margin-left:-2rem;
+        margin-bottom:10rem;
+        
+    }
+    main .introduction{
+        margin:0 auto;
+        margin-top:6rem;
+        margin-left:10rem;
+        width:30rem;
+
+    
+    }
+    .main-section{
+        flex-direction:column;
+        margin-bottom:0rem;
+    }
+
+    .timeline-heading{
+        margin-top:-12rem;
+        
+    }
+    .timeline-heading h1{
+        font-size:2rem;
+    }
+    h1{
+        font-size:2rem;
+    }
+    .skills-section{
+        margin-top:8rem;
+
+    }
+   
+    .heading{
+        margin-left:-10rem;
+    }
+    #skills-heading{
+        font-size:2rem;
+    }
+    .about-skills{
+        width:35rem;
+        text-align:justify;
+        margin-left:-3rem;
+    }
+  
+
+ }
+
+ @media (max-width:480px){
+    main{
+        width:25rem;
+        margin-left:-0.3rem;
+    }
+    main .introduction{
+        margin-left:2rem;
+        width:22rem;
+        text-align:justify;
+
+    }
+
+    h1{
+        font-size:2rem;
+        margin-bottom:5rem;
+        margin-left:2rem;
+
+    }
+ 
+    .profile{
+        width:10rem;
+    }
+    .spec{
+        font-size:1.5rem;
+
+        
+
+    }
+    .timeline-heading{
+        margin-top:-4rem;
+        padding-top:0rem;
+    }
+
+    .timeline-heading h1{
+        font-size:2rem;
+        margin-left:1.5rem;
+    
+    }
+    
+  
+
+    .main-section{
+        flex-direction:column;
+        max-width: 24rem;
+        overflow:hidden;
+        margin-bottom:1rem;
+        margin-top:-15rem;
+        margin-left:1rem;
+    
+    }
+    .timeline-section{
+        max-width:20rem;
+        overflow:hidden;
+        padding:0;
+        margin:0;
+        margin-top:-1rem;
+        margin-left:1.5rem;
+    }
+    .timeline-item{
+    background-color:none;
+    
+    }
+
+
+    #skills-heading{
+    
+        font-size:2rem;
+        margin-top:5rem;
+        margin-left:13rem;
+        width:10rem;
+
+    }
+  .skills-section{
+    margin:0;
+    padding:0;
+    width:24rem;
+    margin-bottom:1rem;
+    
+  }
+
+    .about-skills{
+        display:block;
+        font-size:1.5rem;
+        width:20rem;
+        margin:0rem;
+        text-align:left;
+        margin-left:2rem;
+        margin-right:2rem;
+        margin-top:-4rem;
+        
+      
+    }
+    .percentage{
+        width:20rem;
+        align-items:center;
+        
+    
+    }
+    .percentage li{
+        justify-items: center;
+        margin-left:-0.5rem;
+        width:21rem;
+    }
+     
+ }
