@@ -133,6 +133,9 @@ ol li div:hover .visit{
         
        
     }
+    .visit{
+        display:none;
+    }
 
     .projects ol {
         width: 20rem;
